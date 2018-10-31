@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+ <head>
+   <title>Review</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+   .rating_box{
+   background-color:#4587f1;
+   width:50%;
+   margin:auto;
+   padding:30px auto;
+   padding-left:30px;
+   padding-right:30px;
+   text-align:left;
+   padding-bottom: 40px;
+   padding-top: 1px;
+   border-radius:10px;
+}
+   
+   .star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 25px;
+  height: 25px;
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  text-shadow: 0px 1px 0 #a2a2a2;
+}
+.star-ratings-css-top {
+  color: #e7711b;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.star-ratings-css-bottom {
+  padding: 0;
+  display: block;
+  z-index: 0;
+}
+.star-ratings-sprite {
+  background: url("images/star4.png") repeat-x;
+  font-size: 0;
+  height: 36px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 150px;
+  display: inline-block;
+  
+}
+.star-ratings-sprite-rating {
+  background: url("images/star4.png") repeat-x;
+  background-position: 0 100%;
+  float: left;
+  height: 28px;
+  display: block;
+}
+
+body {
+  margin: 50px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background: #f2fbff;
+}
+em {
+  font-style: italic;
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#fff;
+  padding-top:37px;
+  text-align:left;
+  line-height:0;
+}
+h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.rating_box h4{
+   color:#fff;
+   font-size:30px;
+   text-align:left;
+   padding-right: 20px;
+   vertical-align: super;
+   display: inline-block;
+   line-height: 0;
+  }
+ .reviews_count{
+    display: inline-block;
+    vertical-align: super;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.firm_name{
+   display: initial;
+    vertical-align: super;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 20px;}
+	
+.reviews_count::before {
+    content: "";
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 19px;
+    margin-left: -12px;
+    border-radius: 25px;
+}
+.reviews_count::after {
+    content: "";
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 19px;
+    margin-left: 8px;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width:765px){
+ .rating_box h2{
+ line-height:1.2 !important;}
+}
+   </style>
+ </head>
+ <body>
+  <div class="rating_box">
+	 <h2>Percentage based star ratings</h2>
+	 <h4 class="rating_number">4.2</h4>
+	 <div class="star-ratings-sprite">
+	   <span style="width:86%" class="star-ratings-sprite-rating"></span>
+	 </div>
+	 <div class="reviews_count"> 355 reviews</div>
+	 <div class="firm_name"> $$ Thai Restaurant</div>
+   </div>
+ </body>
+</html>
